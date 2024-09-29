@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiWelcomeApp.Page5"
+             Title="Page5">
+    <VerticalStackLayout x:Name="stack">
+        <!--<Image Source="dotnet_bot.png"/>-->
+        <Slider Minimum="10"
+                Maximum="50"
+                Value="20"
+                ThumbColor="BlueViolet"
+                MinimumTrackColor="Red"
+                MaximumTrackColor="Blue"
+                ValueChanged="Slider_ValueChanged"
+                WidthRequest="400">
+            
+        </Slider>
+        <RadioButton GroupName="group" Content="Moscow" Value="Moscow" CheckedChanged="RadioButton_CheckedChanged"/>
+        <RadioButton GroupName="group" Content="Tula" Value="Tula" CheckedChanged="RadioButton_CheckedChanged"/>
+        <RadioButton GroupName="group" Content="Orel" Value="Orel" CheckedChanged="RadioButton_CheckedChanged"/>
+        <RadioButton GroupName="group" Content="Kaluga" Value="Kaluga" CheckedChanged="RadioButton_CheckedChanged"/>
+    </VerticalStackLayout>
+    
+</ContentPage>
