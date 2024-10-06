@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiWelcomeApp.PageProgress"
+             Title="PageProgress">
+    <VerticalStackLayout>
+        <Label x:Name="tablo"
+            Text="Progress "
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <ProgressBar x:Name="progressBar" ProgressColor="Blue" Margin="20"/>
+        <ActivityIndicator x:Name="indicator" IsRunning="false" Color="Red" Margin="20"/>
+        <Button Text="Start" Clicked="Button_Clicked_1" Margin="20"/>
+    </VerticalStackLayout>
+</ContentPage>

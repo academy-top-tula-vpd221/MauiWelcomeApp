@@ -8,7 +8,7 @@
 
             //MainPage = new SecondPage(); //new MyPage(); //new AppShell();
             //MainPage = new NewPage1();
-            MainPage = new Page5();
+            MainPage = new PageProgress();
         }
     }
 }

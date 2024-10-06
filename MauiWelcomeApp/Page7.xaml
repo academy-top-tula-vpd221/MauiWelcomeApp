@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiWelcomeApp.Page7"
+             Title="Page7">
+    <HorizontalStackLayout>
+        <Label x:Name="tablo"/>
+        <TableView x:Name="tableView">
+            <TableView.Root>
+                <TableRoot Title="Employees">
+                    <TableSection>
+                        <TextCell Text="Bobby"/>
+                        <SwitchCell Text="Married" OnChanged="swMarried_OnChanged"/>
+                        <EntryCell Placeholder="Input department" Completed="txtDepart_Completed"/>
+                        <!--<ImageCell/>
+                        <ViewCell/>-->
+                    </TableSection>
+                </TableRoot>
+            </TableView.Root>
+        </TableView>
+    </HorizontalStackLayout>
+</ContentPage>
